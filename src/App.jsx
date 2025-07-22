@@ -8,6 +8,7 @@ import ReadStrory from './homePage/ReadStory';
 import ShoespageImages from './homePage/ShoespageImage.jsx';
 import AnotherShoes from './homePage/AnotherShoes.jsx';
 import FirstShoesPage from './homePage/FirstShoesPage.jsx';
+import AboutUs from "./homePage/AboutUs.jsx";
 
 
 import "./App.css";
@@ -47,7 +48,7 @@ export default function App() {
   {/* Centered Content */}
   <div className="content-at-center">
     <div className="stick white">
-      <h1>for colourful steps in life</h1>
+      <h1 className="about">for colourful steps in life</h1>
     </div>
     <div className="mybutton">
       <button>visit our stores</button>
@@ -59,7 +60,7 @@ export default function App() {
 <FirstShoesPage/>
 <AnotherShoes/>
 <ShoespageImages/>
-
+<AboutUs/>
 </div>
 </>
 
