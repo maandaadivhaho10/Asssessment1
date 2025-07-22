@@ -1,0 +1,15 @@
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* two columns */
+  grid-template-rows: repeat(6, 1fr);    /* two rows */
+  height: 100vh;
+  width: 100vw;
+}
+
+.grid-layout > * {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* optional, for visual reference */
+}
+

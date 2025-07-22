@@ -1,0 +1,26 @@
+.image-container1 {
+  display: flex;
+  flex-direction: row-reverse; /* optional: use row-reverse instead if you don't change JSX order */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-image1 {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-images1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+
+.side-image1 {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}

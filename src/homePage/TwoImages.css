@@ -1,0 +1,10 @@
+.image-container {
+  display: flex;
+  width: 100%;
+}
+
+.half-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover; /* ensures image fills the box without distortion */
+}

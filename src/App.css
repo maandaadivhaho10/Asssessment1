@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Container takes full viewport */
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/assets/imageass1.jpg'); /* or use inline with JS */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Header image (logo) */
+.hero-image {
+  height: 70px;
+  width: auto;
+}
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 80px;
+}
+
+.logo-img{
+  height: 60px;
+ 
+}
+/* Logo on the left */
+.logopic {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+
+/* Center nav */
+.nav {
+  display: flex;
+  gap: 30px;
+ 
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.0rem;
+   justify-content: center;
+   align-items: center;
+  margin: 20px;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Centered content */
+.content-at-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Decorative white stick (optional or style as box) */
+.stick.white h1 {
+  color:white ;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Visit button */
+.mybutton button {
+  background-color: #00E68A;
+  padding: 15px 30px;
+  border: none;
+   border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   letter-spacing: 1px;
+}
+
+.mybutton button:hover {
+  background-color: #20bd6b;
+}
+.cart-container {
+  position: relative; /* ← NOT fixed anymore */
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #FFB6B6;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
