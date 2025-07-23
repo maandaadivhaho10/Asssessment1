@@ -1,46 +1,62 @@
 .story-container {
-  background-color: #001f3f; /* dark blue */
+  background-color: #052c54; /* dark blue */
   color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical centering */
-    /* horizontal centering */
-  padding: 40px ;
+  justify-content: center;
+  padding: 40px;
   text-align: start;
+  font-family: 'Helvetica Neue', sans-serif;
+ 
 }
 
 .story-container h1 {
   margin-bottom: 20px;
   font-weight: 500;
-  max-width: 600px;
+  font-size: 33px;
+   margin-left: 200px;
 }
 
 .story-link {
-  color: #00E68A;
-  font-weight: bold;
-   text-decoration: underline;
-  text-decoration-thickness: 1px;        /* optional: thicker line */
-  text-underline-offset: 6px;           
+  color: #00dab0;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
   font-size: 16px;
-  margin-top: 10px;
   transition: color 0.3s;
-   padding: 25px;
+   
 }
 
 .story-link:hover {
   color: #00b36b;
-  text-decoration: underline;
 }
 
 .vertical-line {
   width: 1px;
-  height: 20px; /* adjust as needed */
-  background-color:white;
- 
+  height: 20px;
+  background-color: white;
+  margin-right: 10px; /* spacing between line and text */
+   margin-left: 200px;
 }
 
-.myStroryLink{
-    display:flex;
-    
+.myStroryLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .story-container {
+    padding: 20px;
+  }
+
+  .story-container h1 {
+    font-size: 18px;
+  }
+
+  .story-link {
+    font-size: 14px;
+  }
 }

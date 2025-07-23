@@ -92,7 +92,7 @@ html, body {
 
 /* Visit button */
 .mybutton button {
-  background-color: #00E68A;
+  background-color: #00f5c3;
   padding: 15px 30px;
   border: none;
    border-radius: 30px;
@@ -127,4 +127,7 @@ html, body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+}
+.top-bar {
+  margin: 80px;
 }

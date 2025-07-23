@@ -1,5 +1,4 @@
 
-
 .box1{
   display: flex;
   flex-direction: column;
@@ -14,12 +13,123 @@
   color: navy; /* spacing between h1 and image */
   text-align: left;
 }
-.box2 img {
-  max-width: 100%;
-  height: 300px; /* You can adjust height */
-  margin: 0.5rem; /* Adds space around images */
-  object-fit: cover;
+.box-image {
+  display: flex;
+  gap: 10px; /* space between images */
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-bottom: 190px;
 }
+
+.small-image {
+  width: 320px;      /* set desired width */
+  height: auto;      /* keep image aspect ratio */ /* optional rounded corners */
+  object-fit: cover;  /* crop to fit box if needed */
+}
+
 .medullalink{
-    color:navy
+color:navy;
+ text-decoration: none;               /* remove default underline */
+  border-bottom: 1px solid gray;   /* thin underline (change color as needed) */
+  padding-bottom: 2px;  
+}
+.outer-Container {
+  display: flex;
+}
+
+.box-image, .forminput {
+  width: 50%;
+}
+.forminput {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal centering */
+  justify-content: center;  /* vertical centering */
+  height: 100%;             /* ensure it fills parent height */
+  text-align: center;       /* optional: center text inside elements */
+}
+
+.forminput h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.forminput {
+  width: 50%;
+  display: flex;
+  height: 100%;
+  font-family: 'Helvetica', sans-serif;
+  padding: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  color: #666;
+}
+.myp{
+    color: #666;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-group button {
+  background-color: #00f5c3;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #00dab0;
+}
+
+.privacy-note {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+   margin-bottom: 100px;
+}
+.horizontal-line {
+  width: 70%;
+  height: 0.5px; /* thinner line */
+  background-color: #bdb9b9 !important; /* deep red */
+ margin: 40px 250px 170px;
+
+}
+@media (max-width: 768px) {
+  .outer-Container {
+    flex-direction: column;
+  }
+
+  .forminput,
+  .box-image {
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+  }
 }

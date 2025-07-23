@@ -11,7 +11,6 @@ export default function TwoImages() {
       <div>
         <h1>
           Melula a Copenhagen based kids fashion brand. Colourful, playful and gender
-          <br></br>
           neutral. Designed in Denmark, produced in Portugal.
         </h1>
       </div>
