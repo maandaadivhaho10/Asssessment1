@@ -50,13 +50,35 @@
 @media (max-width: 600px) {
   .story-container {
     padding: 20px;
+    height: auto;
+    text-align: center;
   }
 
   .story-container h1 {
     font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .vertical-line {
+    margin-left: 0;
   }
 
   .story-link {
     font-size: 14px;
+  }
+
+  .myStroryLink {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .story-container h1 {
+    margin-left: 50px;
+  }
+
+  .vertical-line {
+    margin-left: 50px;
   }
 }

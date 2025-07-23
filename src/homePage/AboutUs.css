@@ -1,4 +1,6 @@
-
+.mycontainerout{
+    margin-top: 250px;
+}
 .box1{
   display: flex;
   flex-direction: column;
@@ -47,7 +49,8 @@ color:navy;
   align-items: center;      /* horizontal centering */
   justify-content: center;  /* vertical centering */
   height: 100%;             /* ensure it fills parent height */
-  text-align: center;       /* optional: center text inside elements */
+  text-align: center; 
+       /* optional: center text inside elements */
 }
 
 .forminput h1 {
