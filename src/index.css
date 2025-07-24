@@ -1,7 +1,7 @@
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* two columns */
-  grid-template-rows: repeat(7, 1fr);    /* two rows */
+  grid-template-columns: repeat(1, 1fr); /* one column */
+  grid-template-rows: repeat(7, 1fr);    /* seven rows */
   height: 100vh;
   width: 100vw;
 }
@@ -12,4 +12,3 @@
   box-sizing: border-box;
   border: 1px solid #ccc; /* optional, for visual reference */
 }
-

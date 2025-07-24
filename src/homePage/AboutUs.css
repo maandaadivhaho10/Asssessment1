@@ -115,24 +115,95 @@ color:navy;
   height: 0.5px; /* thinner line */
   background-color: #bdb9b9 !important; /* deep red */
  margin: 40px 250px 170px;
-
 }
-@media (max-width: 768px) {
+
+/* Base styles you provided remain unchanged */
+
+/* Responsive styles for tablets and mobiles */
+@media (max-width: 900px) {
   .outer-Container {
     flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 
-  .forminput,
-  .box-image {
+  .box-image,
+  .forminput {
     width: 100%;
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-bottom: 2rem; /* Space between stacked sections */
+  }
+
+  .about {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .box-image {
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 3rem;
+  }
+
+  .small-image {
+    width: 90%; /* Make images responsive */
+    max-width: 320px; /* Maintain max size */
+    height: auto;
+  }
+
+  .forminput {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .forminput h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .input-group {
+    max-width: 100%;
     flex-direction: column;
+    gap: 1rem;
   }
 
-  .input-group input,
+  .input-group input {
+    width: 100%;
+  }
+
   .input-group button {
     width: 100%;
+    padding: 1rem;
+  }
+
+  .privacy-note {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .horizontal-line {
+    width: 90%;
+    margin: 2rem auto 3rem;
+  }
+}
+
+/* Smaller mobiles */
+@media (max-width: 480px) {
+  .small-image {
+    width: 100%;
+  }
+
+  .forminput h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-group {
+    gap: 0.5rem;
+  }
+
+  .input-group button {
+    padding: 0.75rem;
+    font-size: 0.9rem;
   }
 }
