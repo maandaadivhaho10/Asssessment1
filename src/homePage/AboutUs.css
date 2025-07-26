@@ -1,209 +1,269 @@
-.mycontainerout{
-    margin-top: 250px;
+.melula-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-.box1{
+
+.header-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  color: #1e3a8a;
+  margin-bottom: 60px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.logo-strip {
   display: flex;
-  flex-direction: column;
-  align-items: center;    /* horizontal centering */
-  justify-content: center; /* vertical centering */
-  height: 50vh;            /* each takes half the screen height */
-  box-sizing: border-box;
-}
-
-.about {
-  margin-left: 150px; 
-  color: navy; /* spacing between h1 and image */
-  text-align: left;
-}
-.box-image {
-  display: flex;
-  gap: 10px; /* space between images */
-  margin-top: 10px;
-  margin-left: 150px;
-  margin-bottom: 190px;
-}
-
-.small-image {
-  width: 320px;      /* set desired width */
-  height: auto;      /* keep image aspect ratio */ /* optional rounded corners */
-  object-fit: cover;  /* crop to fit box if needed */
-}
-
-.medullalink{
-color:navy;
- text-decoration: none;               /* remove default underline */
-  border-bottom: 1px solid gray;   /* thin underline (change color as needed) */
-  padding-bottom: 2px;  
-}
-.outer-Container {
-  display: flex;
-}
-
-.box-image, .forminput {
-  width: 50%;
-}
-.forminput {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;      /* horizontal centering */
-  justify-content: center;  /* vertical centering */
-  height: 100%;             /* ensure it fills parent height */
-  text-align: center; 
-       /* optional: center text inside elements */
-}
-
-.forminput h1 {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.forminput {
-  width: 50%;
-  display: flex;
-  height: 100%;
-  font-family: 'Helvetica', sans-serif;
-  padding: 20px;
-}
-
-.input-group {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  max-width: 400px;
   justify-content: center;
-  color: #666;
-}
-.myp{
-    color: #666;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
-.input-group input {
-  flex: 1;
-  padding: 12px 16px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
+.logo-strip-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.7);
 }
 
-.input-group button {
-  background-color: #00f5c3;
-  color: white;
+.divider-line {
+  width: 80%;
+  height: 1px;
+  background-color: #d1d5db;
   border: none;
-  padding: 20px 40px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
+  margin: 0 auto 80px auto;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.instagram-section {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.instagram-text {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  font-weight: 300;
+}
+
+.instagram-link {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.instagram-link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.images-section {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.product-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-section {
+  padding: 40px;
+   text-align: center;
+}
+
+.subscribe-title {
+  font-size: 2.25rem;
+  color: #111827;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.subscribe-description {
   font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.email-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 16px 18px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  color: #111827;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.email-input::placeholder {
+  color: #9ca3af;
+}
+
+.signup-button {
+  padding: 16px 28px;
+  background-color: #06d6a0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: 0.025em;
   transition: background-color 0.3s ease;
 }
 
-.input-group button:hover {
-  background-color: #00dab0;
+.signup-button:hover {
+  background-color: #05c195;
 }
 
-.privacy-note {
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #666;
-   margin-bottom: 100px;
-}
-.horizontal-line {
-  width: 70%;
-  height: 0.5px; /* thinner line */
-  background-color: #bdb9b9 !important; /* deep red */
- margin: 40px 250px 170px;
+.privacy-text {
+  font-size: 0.875rem;
+  color: #6b7280;
 }
 
-/* Base styles you provided remain unchanged */
-
-/* Responsive styles for tablets and mobiles */
-@media (max-width: 900px) {
-  .outer-Container {
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .main-title {
+    font-size: 2.8rem;
   }
-
-  .box-image,
-  .forminput {
-    width: 100%;
-    margin-left: 0; /* Remove left margin on smaller screens */
-    margin-bottom: 2rem; /* Space between stacked sections */
+  
+  .logo-strip-image {
+    max-height: 70px;
   }
+  
+  .main-content {
+    gap: 40px;
+  }
+  
+  .product-image {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .subscribe-section {
+    flex: 0 0 350px;
+  }
+}
 
-  .about {
-    margin-left: 0;
+@media (max-width: 768px) {
+  .melula-container {
+    padding: 40px 16px;
+  }
+  
+  .main-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .logo-strip {
+    margin-bottom: 40px;
+  }
+  
+  .logo-strip-image {
+    max-height: 60px;
+  }
+  
+  .divider-line {
+    margin-bottom: 40px;
+  }
+  
+  .instagram-text {
+    font-size: 1.25rem;
     text-align: center;
   }
-
-  .box-image {
-    justify-content: center; /* Center images horizontally */
-    margin-bottom: 3rem;
-  }
-
-  .small-image {
-    width: 90%; /* Make images responsive */
-    max-width: 320px; /* Maintain max size */
-    height: auto;
-  }
-
-  .forminput {
-    padding: 1rem;
+  
+  .instagram-section {
     text-align: center;
+    margin-bottom: 32px;
   }
-
-  .forminput h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .input-group {
-    max-width: 100%;
+  
+  .main-content {
     flex-direction: column;
-    gap: 1rem;
+    gap: 32px;
+    align-items: center;
   }
-
-  .input-group input {
+  
+  .images-section {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
-
-  .input-group button {
+  
+  .product-image {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .subscribe-section {
+    flex: none;
     width: 100%;
-    padding: 1rem;
+    max-width: 400px;
+    padding: 32px 24px;
   }
-
-  .privacy-note {
-    margin-bottom: 2rem;
-    font-size: 0.9rem;
-    padding: 0 1rem;
+  
+  .email-form {
+    flex-direction: column;
+    gap: 12px;
   }
-
-  .horizontal-line {
-    width: 90%;
-    margin: 2rem auto 3rem;
+  
+  .signup-button {
+    width: 100%;
   }
 }
 
-/* Smaller mobiles */
 @media (max-width: 480px) {
-  .small-image {
-    width: 100%;
+  .main-title {
+    font-size: 1.8rem;
   }
-
-  .forminput h1 {
-    font-size: 1.5rem;
+  
+  .logo-strip-image {
+    max-height: 50px;
   }
-
-  .input-group {
-    gap: 0.5rem;
+  
+  .product-image {
+    width: 280px;
+    height: 280px;
   }
-
-  .input-group button {
-    padding: 0.75rem;
-    font-size: 0.9rem;
+  
+  .subscribe-section {
+    padding: 24px 20px;
+  }
+  
+  .subscribe-title {
+    font-size: 1.8rem;
   }
 }
