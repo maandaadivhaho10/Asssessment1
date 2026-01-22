@@ -1,22 +1,21 @@
-import fp1 from "../assets/imae5frist.png";
-import fp2 from "../assets/latF.jpeg";
-import fp3 from "../assets/lastS.jpeg";
 import "./AboutUs.css";
+import ImageWithFallback from "../components/ImageWithFallback";
+
+const fp1 = "https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=1000&auto=format&fit=crop";
+const fp2 = "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1000&auto=format&fit=crop";
+const fp3 = "https://images.unsplash.com/photo-1445205170230-053b830c6050?q=80&w=1000&auto=format&fit=crop";
 
 const AboutUs = () => {
-
-
   return (
     <div className="melula-container">
       <div className="header-section">
         <h1 className="main-title">They talk about us</h1>
         
-        <div className="logo-strip">
-          <img 
-            src={fp1}
-            alt="VOGUE MilK KiDS Enfants Terribles Childhood Business BAZAAR" 
-            className="logo-strip-image"
-          />
+        <div className="logo-strip" style={{ display: 'flex', justifyContent: 'center', gap: '20px', fontSize: '1.2rem', fontWeight: 'bold', color: '#555' }}>
+          <span>VOGUE</span>
+          <span>BAZAAR</span>
+          <span>ELLE</span>
+          <span>GQ</span>
         </div>
         
         <hr className="divider-line" />
@@ -27,26 +26,26 @@ const AboutUs = () => {
           <p className="instagram-text">
             Follow us on Instagram{' '}
             <a 
-              href="https://www.instagram.com/melula_copenhagen" 
+              href="https://www.instagram.com/aurastyle" 
               className="instagram-link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @melula_copenhagen
+              @aurastyle_official
             </a>
           </p>
         </div>
 
         <div className="main-content">
           <div className="images-section">
-            <img 
+            <ImageWithFallback 
               src={fp2} 
-              alt="Melula product showcase 1" 
+              alt="AuraStyle product showcase 1" 
               className="product-image"
             />
-            <img 
+            <ImageWithFallback 
               src={fp3} 
-              alt="Melula product showcase 2" 
+              alt="AuraStyle product showcase 2" 
               className="product-image"
             />
           </div>
@@ -60,7 +59,6 @@ const AboutUs = () => {
             <div className="email-form">
               <input
                 type="email"
-      
                 placeholder="Email Address"
                 className="email-input"
               />

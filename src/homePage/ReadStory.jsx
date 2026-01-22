@@ -1,25 +1,22 @@
 
-import "./ReadStroy.css";
+import "./ReadStory.css";
 
-
-export default function TwoImages() {
+export default function ReadStory() {
   return (
     <div className="story-container">
       <div>
-        <h1>Melula Kids shoes</h1>
+        <h1>AuraStyle Essentials</h1>
       </div>
       <div>
-        <h1>
-          Melula a Copenhagen based kids fashion brand. Colourful, playful and gender
-          neutral. Designed in Denmark, produced in Portugal.
-        </h1>
+        <p className="story-description">
+          AuraStyle is a Copenhagen based fashion brand. Minimalist, elegant and 
+          sustainable. Designed in Denmark, crafted with care for the modern individual.
+        </p>
       </div>
       <div className="myStroryLink">
-         <div className="vertical-line"></div>
          <div>
-              <a className="story-link" href="#">Read our story</a>
+              <a className="story-link" href="#about">Read our story</a>
          </div>
-      
       </div>
     </div>
   );

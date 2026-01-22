@@ -6,6 +6,23 @@ html, body {
   font-size: 16px;
 }
 
+.nav-only-container {
+  height: 8.125rem;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.grid-layout {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -95,20 +112,25 @@ html, body {
 }
 
 .mybutton button {
-  background-color: #00f5c3;
-  padding: 1.25rem 2.5rem;
-  border: none;
-  border-radius: 1.875rem;
+  background-color: transparent;
+  padding: 1rem 3rem;
+  border: 1.5px solid #fff;
+  border-radius: 50px;
   color: white;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  letter-spacing: 0.0625rem;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(5px);
 }
 
 .mybutton button:hover {
-  background-color: #20bd6b;
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .cart-container {
@@ -135,7 +157,7 @@ html, body {
   position: absolute;
   top: -0.0625rem;
   right: 0.625rem;
-  background-color: #FFB6B6;
+  background-color: #000;
   color: white;
   font-size: 0.75rem;
   width: 1.125rem;
@@ -170,7 +192,7 @@ html, body {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 43, 91, 0.95); /* dark background */
+    background-color: rgba(0, 0, 0, 0.95); /* dark background */
     position: absolute;
     top: 5rem;
     left: 0;

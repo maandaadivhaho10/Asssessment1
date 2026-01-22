@@ -1,0 +1,80 @@
+.story-container {
+  background-color: #fff;
+  color: #000;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8vh 5vw; /* relative padding */
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.story-container h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.story-description {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  color: #555;
+}
+
+.story-link {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+  transition: opacity 0.3s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.story-link:hover {
+  opacity: 0.6;
+}
+
+.vertical-line {
+  display: none;
+}
+
+.myStroryLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+@media (max-width: 600px) {
+  .story-container {
+    padding: 6vh 4vw;
+    align-items: flex-start; /* optional */
+  }
+
+  .story-container h1 {
+    font-size: 1.25rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 90vw;
+  }
+
+  .vertical-line {
+    margin-left: 5vw;
+  }
+
+  .story-link {
+    font-size: 0.9rem;
+  }
+}
+

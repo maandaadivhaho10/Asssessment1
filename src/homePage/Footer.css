@@ -1,5 +1,5 @@
 .footer {
-  background-color: #002b5b;
+  background-color: #000;
   color: white;
   padding: 40px 20px;
   font-family: 'Helvetica Neue', sans-serif;
@@ -20,7 +20,7 @@
 }
 
 .footer-brand .brand-name {
-  color: #00f5c3;
+  color: #fff;
   font-weight: bold;
 }
 

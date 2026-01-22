@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebookF, FaPinterestP } from "react-icons/fa";
 import './Footer.css'
 export default function Footer() {
@@ -6,9 +7,11 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-content">
         <p className="footer-brand">
-          <span className="brand-name">Melula</span>
-          &nbsp;11 Dannevirkegade, København, 1763, Denmark &nbsp;
-         <a href="mailto:hello@melula.com" className="email-link">hello@melula.com</a>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <span className="brand-name">AuraStyle</span>
+          </Link>
+          &nbsp;11 Fashion Street, Copenhagen, 1763, Denmark &nbsp;
+         <a href="mailto:hello@aurastyle.com" className="email-link">hello@aurastyle.com</a>
 
         </p>
 
@@ -19,8 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-links">
-          <a href="#">CONTACT & WHOLESALE</a>
-          <a href="#">TERMS AND CONDITIONS</a>
+          <Link to="/shop">SHOP ALL</Link>
           <a href="#">SHIPPING & RETURNS</a>
         </div>
       </div>
